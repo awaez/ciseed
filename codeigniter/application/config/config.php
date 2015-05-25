@@ -15,6 +15,7 @@
 |
 */
 $config['base_url']	= 'https://ciseed-jdbence.c9.io';
+//$config['base_url']	= 'https://ciseed-awanegar.c9.io';
 
 /*
 |--------------------------------------------------------------------------
