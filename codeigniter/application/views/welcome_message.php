@@ -84,10 +84,11 @@
 						thisButton.prepend('<span class="glyphicon glyphicon-refresh"></span>');
 						$.ajax({
 							type:	'GET',
+							dataType: 'json',
 							url:	hp.info_board.attr('create_student_hyper'),
 							success: function(data){
 								if(data != 0){	//creation successful
-									hp.add_student($.parseJSON(data));
+									hp.add_student(data);
 									thisButton.find('span').remove();
 								}else{	//creation failed
 									alert( 'creation of the new student faild' );

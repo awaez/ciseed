@@ -28,11 +28,11 @@ class User_model extends CI_Model
         
         $this->db->insert('Student', $data);
 
-		if( $this->db->insert_id() ){
-			return $this->db->insert_id();
-		}else{
-			return FALSE;
-		}
+        if( $this->db->insert_id() ){
+            return $this->db->insert_id();
+        }else{
+            return FALSE;
+        }
      }
 
 
